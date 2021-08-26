@@ -16,7 +16,7 @@ class UntitledTestCase(unittest.TestCase):
     def test_login_danfoss_itp(self):
         driver = self.driver
         self.open_home_page(driver)
-        self.login(driver, user_email="s-k@ukr.net", password="afpvfg2")
+        self.login(driver, user_email="@ukr.net", password="afpvfg2")
         self.fill_data(driver, Data(p1=10, p2=3, t1=150, t2=70, heat_power=300, static_height=35, t11=90))
         driver.find_element_by_xpath("//button/*[text()='Розрахунок']/..").click()
 
